@@ -7,7 +7,7 @@ This document describes how to install and configure the Node Exporter on a serv
 1. **Download the latest version of Node Exporter:**
     
     ```bash
-    wget <https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz>
+    wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
     
     ```
     
@@ -46,7 +46,7 @@ This document describes how to install and configure the Node Exporter on a serv
    After=network-online.target
 
    [Service]
-   User=node_exporter # Check the desired user
+   User=node_exporter
    ExecStart=/usr/local/bin/node_exporter
 
    [Install]
